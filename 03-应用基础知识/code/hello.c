@@ -3,8 +3,8 @@
 /*
 gcc -o hello hello.c
 1. 执行 ./hello (argc = 1, argv[1] = ./hello)
-2. 执行 ./hello bingo (argc = 2, argv[1] = ./hello argv[2] = bing0)
-3. 执行 ./hello double bingo (argc = 3, argv[1] = ./hello argv[2] = double argv[3] = bing0)
+2. 执行 ./hello bingo (argc = 2, argv[1] = ./hello argv[2] = bingo)
+3. 执行 ./hello double bingo (argc = 3, argv[1] = ./hello argv[2] = double argv[3] = bingo)
 */
 int main(int argc, char **argv)
 {
