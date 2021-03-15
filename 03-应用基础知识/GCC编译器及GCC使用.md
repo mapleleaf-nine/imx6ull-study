@@ -4,7 +4,7 @@
     - 预处理 ：`.c`/`.cpp`文件   
     C/C++源文件中，以“#”开头的命令被称为预处理命令，如包含命令“#include”、宏定义命令“#define”、条件编译命令“#if”、“#ifdef”等。预处理就是将要包含(include)的文件插入原文件中、将宏定义展开、根据条件编译命令选择要使用的代码，最后将这些东西输出到一个“.i”文件中等待进一步处理。
     - 编译 ：`.i`文件 
-    编译就是把C/C++代码(比如上述的“.i”文件)“翻译”成汇编代码，所用到的工具为ccl(它的名字就是ccl，x86有自己的cc1命令，ARM板也有自己的ccl命令)。
+    编译就是把C/C++代码(比如上述的“.i”文件)“翻译”成汇编代码，所用到的工具为ccl(它的名字就是cc1，x86有自己的cc1命令，ARM板也有自己的cc1命令)。
     - 汇编 ：`.s`文件 
     汇编就是将第二步输出的汇编代码翻译成符合一定格式的机器代码，在Linux系统上一般表现为ELF目标文件(OBJ文件)，用到的工具为as。x86有自己的as命令，ARM版也有自己的as命令，也可能是xxxx-as（比如arm-linux-as）。
     “反汇编”是指将机器代码转换为汇编代码，这在调试程序时常常用到。
@@ -13,7 +13,7 @@
     - 完成前面四个步骤后形成可运行的app
 2. 编译程序时加上"-v"选项 gcc -o hello hello.c -v
     - cpp -o hello.i hello.c
-    - ccl hello.i -o /tmp/cctETob7.s
+    - cc1 hello.i -o /tmp/cctETob7.s
     - as -o /tmp/ccvv2KbL.o /tmp/cctETob7.s
     - collect2 -o hello crt1.o crti.o crtbegin.o /tmp/ccvv2KbL.o crtend.o crtn.o
     - 可以看到gcc编译过程使用了那些工具
