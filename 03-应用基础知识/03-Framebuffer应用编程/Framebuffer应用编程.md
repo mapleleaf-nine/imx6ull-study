@@ -18,5 +18,7 @@
     - 对于24BPP，硬件上为了方便处理，在Framebuffer中也是用32位来表示，效果跟32BPP是一样的。
     - 对于16BPP，常用的是RGB565；很少的场合会用到RGB555，这可以通过ioctl读取驱动程序中的RGB位偏移来确定使用哪一种格式。
     ![Alt](https://img-blog.csdnimg.cn/20210319192502315.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01hcGxlTGVhZl85,size_16,color_FFFFFF,t_70)
-
+## 注释：
+- bpp:bits per pixel(每个像素用多少位来表示它的颜色)
+- xres:X轴方向的分辨率(分辨率指显示器所能显示的像素有多少)
 
