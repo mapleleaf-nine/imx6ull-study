@@ -35,7 +35,7 @@
     - -O0 : 不优化
     - 在一般应用中，经常使用-O2选项
 6. 有帮助的选项命令
-    ```
+    ```c
     gcc -E main.c // 查看预处理结果，比如头文件是哪个
     gcc -E -dM main.c > 1.txt // 把所有的宏展开，存在1.txt里
     gcc -Wp,-MD,abc.dep -c -o main.o main.c // 生成依赖文件abc.dep，Makefile会用

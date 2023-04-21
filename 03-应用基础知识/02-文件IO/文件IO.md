@@ -24,3 +24,11 @@
 ![Alt](https://img-blog.csdnimg.cn/20210318215921175.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01hcGxlTGVhZl85,size_16,color_FFFFFF,t_70)
 - 内核的sys_open、sys_read会做什么
 ![Alt](https://img-blog.csdnimg.cn/20210318220030440.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01hcGxlTGVhZl85,size_16,color_FFFFFF,t_70)
+
+6. 查看挂载
+
+   ```c
+   cat /proc/mounts       //查看挂载设备等信息
+   ```
+
+7. 主设备号：表示哪一种类型的驱动，从设备号：表示该类驱动的第几个设备（硬件）标识
